@@ -1,0 +1,233 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Consultoria Financeira |";
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+<style>
+    body {
+        font-family: 'Open Sans', sans-serif;
+        background-color: #f9f9f9;
+        color: #333;
+    }
+
+    h1, h2, h3, h4 {
+        font-family: 'Poppins', sans-serif;
+        color: #0d6efd;
+    }
+
+    .section-title {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 1rem;
+    }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: #0d6efd;
+            border-radius: 2px;
+        }
+
+    .card {
+        border: none;
+        border-radius: 12px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+    }
+
+    .btn-primary {
+        background-color: #0d6efd;
+        border: none;
+        border-radius: 8px;
+        padding: 10px 20px;
+        font-weight: 600;
+    }
+
+        .btn-primary:hover {
+            background-color: #0b5ed7;
+        }
+</style>
+
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h1 class="mb-4">Consultoria Financeira para Você e Seu Negócio</h1>
+
+                <p class="lead mb-5">
+                    Sou consultor financeiro e ofereço consultoria personalizada para pessoas físicas, profissionais autônomos e microempreendedores, ajudando você a organizar suas finanças, planejar o futuro e cumprir suas obrigações fiscais com mais tranquilidade.
+                </p>
+
+                <h4 class="mb-4">Serviços oferecidos</h4>
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">Consultoria Financeira Pessoal</h5>
+                                <p class="card-text">
+                                    Organização de gastos, orçamento e planejamento de metas.
+                                    Ideal para quem deseja tomar o controle das finanças pessoais, sair do sufoco financeiro, criar metas realistas e montar um plano de vida com mais estabilidade e segurança.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">Apoio a Profissionais Autônomos</h5>
+                                <p class="card-text">
+                                    Gestão financeira, precificação e planejamento do negócio.
+                                    Voltado para quem trabalha por conta própria e precisa estruturar o financeiro de forma prática e eficiente.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">Consultoria para Microempreendedores (MEIs)</h5>
+                                <p class="card-text">
+                                    Fluxo de caixa, DAS, precificação e obrigações fiscais.
+                                    Focada em ajudar microempreendedores a manterem a saúde financeira do negócio e estarem em dia com o fisco.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">Declaração de IRPF</h5>
+                                <p class="card-text">
+                                    Preparo e envio da declaração.
+                                    Análise completa da sua situação fiscal, separação e organização dos documentos, preenchimento e envio da declaração no sistema da Receita Federal, com entrega do recibo e explicações detalhadas sobre os dados declarados.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">Revisão e Retificação de IRPF</h5>
+                                <p class="card-text">
+                                    Análise e correções em declarações anteriores.
+                                    Revisão de declarações passadas com foco em identificar erros, omissões ou oportunidades de retificação. Inclui reenvio atualizado e orientações sobre como evitar penalidades futuras.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">Simulação de IR</h5>
+                                <p class="card-text">
+                                    Projeção do imposto anual considerando rendimentos e deduções.
+                                    Permite que você se antecipe e planeje seu ano fiscal, avaliando cenários com ou sem deduções, inclusão de dependentes, rendimentos de diferentes fontes, escolha entre declaração simplificada ou completa, e muito mais.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <p class="mt-4">
+                    <strong>Importante:</strong> Não realizo serviços contábeis regulamentados.
+                    Meu trabalho é de consultoria e apoio financeiro — ou seja, te ajudo a entender, organizar e planejar suas finanças e obrigações fiscais com clareza e responsabilidade.
+                </p>
+
+                <p class="mb-4">
+                    <a href="https://wa.me/message/RVWTWL6CPJPGI1" target="_blank">
+                        <i class="bi bi-whatsapp" style="color: #25D366;"></i> WhatsApp
+                    </a>
+                    <a href="mailto:V.nevesconsultor.financeiro@hotmail.com" class="ms-3">
+                        <i class="bi bi-envelope-fill" style="color: #0d6efd;"></i> E‑mail
+                    </a>
+                    <a href="https://www.instagram.com/consultor_victorneves/?igsh=MWE0c2JxeWdoZHI2dg%3D%3D#" target="_blank" class="ms-3">
+                        <i class="bi bi-instagram" style="color: #C13584;"></i> Instagram
+                    </a>
+                </p>
+
+            </div>
+                </div>
+            </div>
+
+        <!-- NOVA SEÇÃO SOBRE O PROFISSIONAL -->
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-8 text-center">
+                <h2 class="section-title">Sobre o Profissional</h2>
+                <img src="~/images/profissional.jpg" alt="Foto do consultor"
+                     class="rounded-circle shadow mb-3" width="180" height="180">
+                <h4 class="fw-bold mt-3">Victor Neves</h4>
+                <p class="text-muted mx-auto" style="max-width: 600px;">
+                    Transformo organização financeira em resultados concretos. Acompanho pessoas e pequenos empreendedores a controlar gastos, planejar metas e conquistar objetivos financeiros de forma prática e personalizada.
+                </p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-8">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h4 class="card-title mb-3">Fale comigo</h4>
+
+                        @if (Model.SuccessMessage != null)
+                        {
+                        <div class="alert alert-success">@Model.SuccessMessage</div>
+                        }
+
+                        <form method="post">
+                            <div class="mb-3">
+                                <label asp-for="Form.Nome" class="form-label"></label>
+                                <input asp-for="Form.Nome" class="form-control" placeholder="Seu nome completo" />
+                                <span asp-validation-for="Form.Nome" class="text-danger"></span>
+                            </div>
+
+                            <div class="mb-3">
+                                <label asp-for="Form.Email" class="form-label"></label>
+                                <input asp-for="Form.Email" class="form-control" placeholder="seuemail@exemplo.com" />
+                                <span asp-validation-for="Form.Email" class="text-danger"></span>
+                            </div>
+
+                            <div class="mb-3">
+                                <label asp-for="Form.Telefone" class="form-label"></label>
+                                <input asp-for="Form.Telefone" class="form-control" placeholder="(11) 99999-9999" />
+                                <span asp-validation-for="Form.Telefone" class="text-danger"></span>
+                            </div>
+
+                            <div class="mb-3">
+                                <label asp-for="Form.Mensagem" class="form-label"></label>
+                                <textarea asp-for="Form.Mensagem" class="form-control" rows="4" placeholder="Conte rapidamente como podemos ajudar"></textarea>
+                                <span asp-validation-for="Form.Mensagem" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" asp-for="Form.AceiteLGPD" />
+                                <label class="form-check-label" asp-for="Form.AceiteLGPD">
+                                    Autorizo o uso dos meus dados para contato, conforme a LGPD.
+                                </label>
+                                <span asp-validation-for="Form.AceiteLGPD" class="text-danger"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+                <p class="text-muted mt-2" style="font-size: 0.9rem;">
+                    Seus dados são armazenados com segurança e usados apenas para contato sobre nossos serviços.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

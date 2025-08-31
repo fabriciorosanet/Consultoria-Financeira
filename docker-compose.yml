@@ -1,0 +1,21 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: landingdb_postgres
+    restart: always
+    environment:
+      POSTGRES_DB: landingdb
+      POSTGRES_USER: 
+      POSTGRES_PASSWORD: 
+    ports:
+      - "5432:5432"
+    volumes:
+      - landingdb_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgress"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  landingdb_data:
